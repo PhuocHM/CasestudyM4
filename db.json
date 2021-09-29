@@ -1,0 +1,63 @@
+{
+    "celebrites": [
+        {
+            "id": 1,
+            "name": "ZaHan",
+            "location": "Hanoi",
+            "dob": "22/02/2002",
+            "info": "Top 1 Tiktoker Hanoi.",
+            "images": "assets/images/Celeb/zahan.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Quynh Alee",
+            "location": "Hanoi",
+            "dob": "22/02/1999",
+            "info": "Streammer youtube.",
+            "images": "assets/images/Celeb/alee.png"
+        },
+        {
+            "id": 3,
+            "name": "Gam Kami",
+            "location": "Ho Chi Minh",
+            "dob": "22/02/1999",
+            "info": "Tiktoker.",
+            "images": "assets/images/Celeb/gamkami.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Khanh Huyen",
+            "location": "Ho Chi Minh",
+            "dob": "22/02/1999",
+            "info": "Tiktoker.",
+            "images": "assets/images/Celeb/khanhhuyen.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Linh Ngoc Dam",
+            "location": "Ho Chi Minh",
+            "dob": "22/02/1999",
+            "info": "Tiktoker.",
+            "images": "assets/images/Celeb/lnd.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Misthy",
+            "location": "Ho Chi Minh",
+            "dob": "22/02/1999",
+            "info": "Tiktoker.",
+            "images": "assets/images/Celeb/misthy.jpg"
+        }
+    ],
+    "comment": [
+        {
+            "id": 1,
+            "content": "Hello World Comment",
+            "info": "Aaa"
+        },
+        {
+            "id": 2,
+            "content": "Hello World Comment"
+        }
+    ]
+}

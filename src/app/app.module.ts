@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { TrainningComponent } from './trainning/trainning.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { CelebritesInfoComponent } from './celebrites-info/celebrites-info.component';
+import { ViralVideoComponent } from './viral-video/viral-video.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CelebritesInfoComponent } from './celebrites-info/celebrites-info.compo
     CelebritesListComponent,
     TrainningComponent,
     ErrorPageComponent,
-    CelebritesInfoComponent
+    CelebritesInfoComponent,
+    ViralVideoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
