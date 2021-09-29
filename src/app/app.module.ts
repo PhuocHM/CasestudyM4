@@ -10,6 +10,7 @@ import { CelebritesListComponent } from './celebrites-list/celebrites-list.compo
 import { AppRoutingModule } from './app-routing.module';
 import { TrainningComponent } from './trainning/trainning.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
+import { CelebritesInfoComponent } from './celebrites-info/celebrites-info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
     CompanyComponent,
     CelebritesListComponent,
     TrainningComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    CelebritesInfoComponent
   ],
   imports: [
     BrowserModule,
