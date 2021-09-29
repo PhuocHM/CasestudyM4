@@ -9,7 +9,6 @@ import { TrainningComponent } from './trainning/trainning.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'celebrities-list', component: CelebritesListComponent },
   { path: 'trainning', component: TrainningComponent },
