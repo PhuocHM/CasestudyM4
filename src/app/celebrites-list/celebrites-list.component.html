@@ -33,18 +33,35 @@
                     <em>(required)</em>
                 </div>
             </div>
+            {{items | json}}
+            <div *ngIf="!items.length">
+                <p>123123</p>
+            </div>
+            <div *ngIf="items.length">
+                <div class="row me-0 ms-0" *ngFor="let celebrity of items">
+                    <div class="col-4">
+                        <img src="{{ celebrity.images }}" class="img-fluid rounded-sm mb-3">
+
+                        <h2>{{ celebrity.name }}</h2>
+                        <p>Location : Hanoi<br>Date of birth: 22/02/2002<br>Top 1 Tiktoker Hanoi.</p>
+                        <a href="index-components.html"
+                            class="btn btn-sm rounded-s font-13 font-600 gradient-highlight">View More</a>
+                    </div>
+                </div>
+            </div>
             <div class="row me-0 ms-0">
                 <div class="col-4">
-                    <img src="assets/images/Celeb/zahan.jpg" class="img-fluid rounded-sm mb-3">
-                    <!-- <p class="mb-n1 color-highlight font-600">Column</p> -->
-                    <h2>ZaHan</h2>
-                    <p>Location : Hanoi<br>Date of birth: 22/02/2002<br>Top 1 Tiktoker Hanoi.</p>
-                    <a href="index-components.html"
-                        class="btn btn-sm rounded-s font-13 font-600 gradient-highlight">View More</a>
-                </div>
-                <div class="col-4">
+                    <!-- <div class="col-4"> -->
+                    <!-- <img src="{{ celebrity.images }}" class="img-fluid rounded-sm mb-3"> -->
+
+                    <!-- <h2>{{ celebrity.name }}</h2> -->
+                    <!-- <p>Location : Hanoi<br>Date of birth: 22/02/2002<br>Top 1 Tiktoker Hanoi.</p>
+                        <a href="index-components.html"
+                            class="btn btn-sm rounded-s font-13 font-600 gradient-highlight">View More</a> -->
+                    <!-- </div> -->
+                    <!--   <div class="col-4">
                     <img src="assets/images/Celeb/alee.png" class="img-fluid rounded-sm mb-3">
-                    <!-- <p class="mb-n1 color-highlight font-600">Column</p> -->
+                  
                     <h2>Quynh Alee</h2>
                     <p>Location : Hanoi<br>Date of birth: 18/06/1999<br>Streammer Youtube.</p>
                     <a href="index-components.html"
@@ -52,17 +69,18 @@
                 </div>
                 <div class="col-4">
                     <img src="assets/images/Celeb/gamkami.jpg" class="img-fluid rounded-sm mb-3">
-                    <!-- <p class="mb-n1 color-highlight font-600">Column</p> -->
+                  
                     <h2>Gam Kami</h2>
                     <p>Location : Ho Chi Minh<br>Date of birth: 18/06/1999<br>Tiktoker</p>
                     <a href="index-components.html"
                         class="btn btn-sm rounded-s font-13 font-600 gradient-highlight">View More</a>
+                </div> -->
+                    <!-- {{celebrities_list}} -->
                 </div>
-            </div>
-            <div class="row me-0 ms-0">
+                <!-- <div class="row me-0 ms-0">
                 <div class="col-4">
                     <img src="assets/images/Celeb/khanhhuyen.jpg" class="img-fluid rounded-sm mb-3">
-                    <!-- <p class="mb-n1 color-highlight font-600">Column</p> -->
+                   
                     <h1>Khanh Huyen</h1>
                     <p>Location : Ho Chi Minh<br>Date of birth: 18/06/1999<br>Tiktoker</p>
                     <a href="index-components.html"
@@ -70,7 +88,7 @@
                 </div>
                 <div class="col-4">
                     <img src="assets/images/Celeb/lnd.jpg" class="img-fluid rounded-sm mb-3">
-                    <!-- <p class="mb-n1 color-highlight font-600">Column</p> -->
+                  
                     <h1>Linh Ngoc Dam</h1>
                     <p>Location : Ho Chi Minh<br>Date of birth: 18/06/1999<br>Tiktoker</p>
                     <a href="index-components.html"
@@ -78,15 +96,15 @@
                 </div>
                 <div class="col-4">
                     <img src="assets/images/Celeb/misthy.jpg" class="img-fluid rounded-sm mb-3">
-                    <!-- <p class="mb-n1 color-highlight font-600">Column</p> -->
+                   
                     <h1>Misthy</h1>
                     <p>Location : Ho Chi Minh<br>Date of birth: 18/06/1999<br>Tiktoker</p>
                     <a href="index-components.html"
                         class="btn btn-sm rounded-s font-13 font-600 gradient-highlight">View More</a>
                 </div>
+            </div> -->
             </div>
-        </div>
-        <!-- </div> -->
+            <!-- </div> -->
 
+        </div>
     </div>
-</div>
