@@ -5,6 +5,7 @@ import { CelebritesListComponent } from './celebrites-list/celebrites-list.compo
 import { CompanyComponent } from './company/company.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomeComponent } from './home/home.component';
+// import { NewFeedComponent } from './new-feed/new-feed.component';
 import { TrainningComponent } from './trainning/trainning.component';
 
 const routes: Routes = [

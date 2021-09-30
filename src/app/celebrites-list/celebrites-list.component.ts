@@ -11,7 +11,7 @@ export class CelebritesListComponent implements OnInit {
   constructor(private serverHttp: ServerHttpService) { }
 
   ngOnInit(): void {
-    this.serverHttp.getCelebrities().subscribe((data) => {
+    this.serverHttp.getCelebrities().subscribe(data => {
       console.log(data);
     });
   }

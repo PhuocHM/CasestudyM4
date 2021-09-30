@@ -13,6 +13,8 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { CelebritesInfoComponent } from './celebrites-info/celebrites-info.component';
 import { ViralVideoComponent } from './viral-video/viral-video.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NewFeedComponent } from './new-feed/new-feed.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { FormsModule } from '@angular/forms';
     TrainningComponent,
     ErrorPageComponent,
     CelebritesInfoComponent,
-    ViralVideoComponent
+    ViralVideoComponent,
+    NewFeedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

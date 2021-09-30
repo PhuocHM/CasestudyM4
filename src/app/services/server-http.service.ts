@@ -7,7 +7,7 @@ import { Observable, throwError } from 'rxjs';
 })
 
 export class ServerHttpService {
-  private httpOptions = {
+  httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
       // Authorization: 'my-auth-token'
@@ -20,11 +20,16 @@ export class ServerHttpService {
 
   public getCelebrities(): Observable<any> {
     const url = `${this.REST_API_SERVER}/celebrites`;
-    return this.httpClient
-      .get<any>(url, this.httpOptions)
-      .pipe(catchError(this.handleError));
+    // return this.httpClient
+    //   .get<any>(url)
+    //   .pipe(catchError(this.handleError));
+    return this.httpClient.get<any[]>(url)
+      .pipe(
+        map(response => response),
+        catchError(this.handleError<any[]>('getItems', []))
+      );
   }
-  private handleError(error: HttpErrorResponse) {
+  handleError(error: HttpErrorResponse) {
     if (error.status === 0) {
       console.error('An error occurred:', error.error);
     } else {
