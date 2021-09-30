@@ -1,6 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
+import { map, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -23,10 +24,12 @@ export class ServerHttpService {
     // return this.httpClient
     //   .get<any>(url)
     //   .pipe(catchError(this.handleError));
-    return this.httpClient.get<any[]>(url)
+    return this.httpClient.get<any>(url)
       .pipe(
-        map(response => response),
-        catchError(this.handleError<any[]>('getItems', []))
+        map(response => {
+          console.log(response)
+        }),
+        catchError(this.handleError)
       );
   }
   handleError(error: HttpErrorResponse) {
