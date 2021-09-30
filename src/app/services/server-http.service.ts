@@ -16,12 +16,14 @@ export class ServerHttpService {
     }),
   };
 
-  private REST_API_SERVER = "http://localhost:3000";
+  //private REST_API_SERVER = "http://localhost:3000";
+  private REST_API_SERVER = "https://6083df209b2bed00170404a0.mockapi.io/angular/courses/";
 
   constructor(private httpClient: HttpClient) { }
 
   public getCelebrities(): Observable<any> {
-    const url = `${this.REST_API_SERVER}/celebrites`;
+    //const url = `${this.REST_API_SERVER}/celebrites`;
+    const url = `${this.REST_API_SERVER}`;
     return this.httpClient.get<any>(url, this.httpOptions).pipe(catchError(this.handleError));
   }
   private handleError(error: HttpErrorResponse) {
