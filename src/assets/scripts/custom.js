@@ -187,41 +187,41 @@ document['addEventListener']('DOMContentLoaded', () => {
         //         })
         //     }
         // };
-        var _0x77b9x28 = document['querySelectorAll']('.topic-slider');
-        if (_0x77b9x28['length']) {
-            var _0x77b9x29 = new Splide('.topic-slider', {
-                type: 'loop',
-                autoplay: false,
-                padding: {
-                    left: '15px',
-                    right: '40px'
-                },
-                arrows: false,
-                perPage: 3,
-                perMove: 1
-            })['mount']()
-        };
-        var _0x77b9x2a = document['querySelectorAll']('.story-slider');
-        if (_0x77b9x2a['length']) {
-            var _0x77b9x29 = new Splide('.story-slider', {
-                type: 'loop',
-                autoplay: false,
-                padding: {
-                    left: '0px',
-                    right: '40px'
-                },
-                arrows: false,
-                perPage: 4,
-                perMove: 1
-            })['mount']()
-        };
-        const _0x77b9x2b = document['querySelectorAll']('a[href=\"#\"]');
-        _0x77b9x2b['forEach']((_0x77b9xc) => {
-            return _0x77b9xc['addEventListener']('click', (_0x77b9xb) => {
-                _0x77b9xb['preventDefault']();
-                return false
-            })
-        });
+        // var _0x77b9x28 = document['querySelectorAll']('.topic-slider');
+        // if (_0x77b9x28['length']) {
+        //     var _0x77b9x29 = new Splide('.topic-slider', {
+        //         type: 'loop',
+        //         autoplay: false,
+        //         padding: {
+        //             left: '15px',
+        //             right: '40px'
+        //         },
+        //         arrows: false,
+        //         perPage: 3,
+        //         perMove: 1
+        //     })['mount']()
+        // };
+        // var _0x77b9x2a = document['querySelectorAll']('.story-slider');
+        // if (_0x77b9x2a['length']) {
+        //     var _0x77b9x29 = new Splide('.story-slider', {
+        //         type: 'loop',
+        //         autoplay: false,
+        //         padding: {
+        //             left: '0px',
+        //             right: '40px'
+        //         },
+        //         arrows: false,
+        //         perPage: 4,
+        //         perMove: 1
+        //     })['mount']()
+        // };
+        // const _0x77b9x2b = document['querySelectorAll']('a[href=\"#\"]');
+        // _0x77b9x2b['forEach']((_0x77b9xc) => {
+        //     return _0x77b9xc['addEventListener']('click', (_0x77b9xb) => {
+        //         _0x77b9xb['preventDefault']();
+        //         return false
+        //     })
+        // });
         var _0x77b9x2c = document['querySelectorAll']('.hide-map');
         if (_0x77b9x2c['length']) {
             var _0x77b9x2d = document['querySelectorAll']('.show-map');
