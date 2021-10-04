@@ -33,10 +33,6 @@
                     <em>(required)</em>
                 </div>
             </div>
-            {{items | json}}
-            <div *ngIf="!items.length">
-                <p>123123</p>
-            </div>
             <div *ngIf="items.length">
                 <div class="row me-0 ms-0" *ngFor="let celebrity of items">
                     <div class="col-4">
